@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,3 +18,108 @@
     <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-brand">
+            <span class="navbar-logo">🔐</span>
+            <span class="navbar-title">Encriptador de Texto</span>
+        </div>
+        <nav class="navbar-links">
+            <span>Alura · Challenge</span>
+            <button id="sound-toggle" class="nav-toggle" type="button">🔈 Sonido</button>
+            <button id="theme-toggle" class="nav-toggle" type="button">🌙 Modo oscuro</button>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <div class="container">
+            <div class="mode-row">
+                <label for="mode-select">Tipo de encriptación:</label>
+                <select id="mode-select">
+                    <option value="base64">Base64 (simple)</option>
+                    <option value="alura">Sustitución (desafío Alura)</option>
+                </select>
+            </div>
+            <textarea id="input-text" placeholder="Ingresa el texto aquí"></textarea>
+            <div class="buttons">
+                <button id="encrypt-btn">Encriptar</button>
+                <button id="decrypt-btn" class="secondary">Desencriptar</button>
+            </div>
+            <textarea id="output-text" placeholder="Texto encriptado/desencriptado" readonly></textarea>
+            <div class="actions-row">
+                <button id="copy-btn" class="secondary" type="button">Copiar resultado</button>
+            </div>
+            <p id="status" class="status"></p>
+        </div>
+        <aside class="history">
+            <h2>Historial</h2>
+            <ul id="history-list"></ul>
+        </aside>
+    </div>
+
+    <!-- Personita detective -->
+    <div class="mascot">
+        <img src="detective.png" alt="Detective con lupa">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-column footer-brand">
+                <h3>Guadalupe Manquillan</h3>
+                <p>Proyecto para Alura · Encriptador de texto</p>
+            </div>
+
+            <div class="footer-column footer-social">
+                <h4>Sígueme</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/lelupearg/" target="_blank" rel="noopener noreferrer">
+                            Instagram · @lelupearg
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-links">
+                <h4>Enlaces de interés</h4>
+                <ul>
+                    <li>
+                        <a href="https://github.com/guadalupemanquillan" target="_blank" rel="noopener noreferrer">
+                            GitHub · guadalupemanquillan
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h4>Contacto</h4>
+                <p class="footer-phone">📞 2805 072 908</p>
+                <p class="footer-email">
+                    <span class="footer-icon">✉️</span>
+                    <a href="mailto:guadalupemanquillan@gmail.com">guadalupemanquillan@gmail.com</a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/manquillanrocio/" target="_blank" rel="noopener noreferrer">
+                        💼 LinkedIn · manquillanrocio
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+    <script src="alura.js"></script>
+</body>
+</html>
+>>>>>>> a9acc0b (Primer commit - Proyecto encriptador de texto Alura)
